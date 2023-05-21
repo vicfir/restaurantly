@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}  
+
+{% block content %}
+<div class="member" data-aos="zoom-in" data-aos-delay="200">
+              
+  <img src="{% static chefData.imgUrl %}" class="img-fluid" alt="">
+  
+  <div class="member-info">
+    <div class="member-info-content">
+      <h4>{{chefData.name}}</h4>
+      <span>{{chefData.profession}}</span>
+    </div>
+    <div class="social">
+      <a href=""><i class="bi bi-twitter"></i></a>
+      <a href=""><i class="bi bi-facebook"></i></a>
+      <a href=""><i class="bi bi-instagram"></i></a>
+      <a href=""><i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+</div>
+{% endblock content %}
